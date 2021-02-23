@@ -3,8 +3,21 @@
     <head>
         <meta charset="utf-8">
         <title>JavaScript Basics</title>
+    <style>
+        .box {
+            width: 100px ;
+            height: 100px;
+            background-color: skyblue;
+            cursor: pointer;
+        }
+    </style>
     </head>
+
     <body>
+
+<div class="box" id="target">
+
+</div>
 
     <script>
      'use strict';
@@ -12,6 +25,10 @@
 
      console.log('Hello world!');
      console.log(a);
+
+        document.getElementById('target').addEventListener('click', ()=> {
+            document.getElementById('target').style.background = 'pink';
+        });
 
     </script>
     </body>
